@@ -70,6 +70,18 @@ class Cube:
   def data(self):
     return self.__cube
 
+  @property
+  def origin(self):
+    return self.__origin
+
+  @property
+  def npts(self):
+    return self.__npts
+
+  @property
+  def steps(self):
+    return self.__axis_def
+
 if __name__ == '__main__':
   my_cube = Cube()
   my_cube.load_from_file(sys.argv[1])
