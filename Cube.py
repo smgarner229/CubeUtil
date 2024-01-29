@@ -29,6 +29,10 @@ class Atom:
   def is_quantum(self):
     return self.__quantum
 
+  @property
+  def loc(self):
+    return [self.__x,self.__y,self.__z]
+
 class Cube:
   def __init__(self):
     self.__natom = 0
@@ -81,6 +85,10 @@ class Cube:
   @property
   def steps(self):
     return self.__axis_def
+
+  @property 
+  def geom(self):
+    return self.__geom
 
 if __name__ == '__main__':
   my_cube = Cube()
